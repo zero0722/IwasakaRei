@@ -26,6 +26,8 @@ int main(void)
         {
             printf("%d\n", i); //数字を出力する。
         }
+
+        printf("\n");
     }
 
     return 0;

@@ -10,6 +10,7 @@ int main(void){
     for(i = 0;i < 10;i++){
         rand_num[i] = rand();
         printf("%d\n",rand_num[i]);
+        printf("\n");
     }
 
     return 0;
