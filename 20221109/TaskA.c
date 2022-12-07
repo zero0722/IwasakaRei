@@ -33,6 +33,7 @@ int main(void)
         {
             result = i;
             printf("%dのインデックスは%dです。\n",target,result);
+            break;
         }
         
         printf("\n");
