@@ -34,12 +34,6 @@ int main(void){
         }
     }
     
-    /*for(i = 0; i < 100; ++i)
-    {
-        printf("%d\n",data[i]);
-        printf("\n");
-    }*/
-
     while(left < right)
     {
         mid = (left + right) / 2;
@@ -57,18 +51,22 @@ int main(void){
         {
             right = mid;
         }
+
+        if(result >= 0)
+        {
+            printf("%dのインデックスは%dです\n",target,result);
+            break;
+        }
+
+        else
+        {
+            printf("%dは見つかりませんでした\n",target);
+            
+        }
+
+
     }
 
-    if(result >= 0)
-    {
-        printf("%dのインデックスは%dです\n",target,result);
-        printf("\n");
-    }
-
-    else
-    {
-        printf("%dは見つかりませんでした\n",target);
-    }
 
     return 0;
 }
